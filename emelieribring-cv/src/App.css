@@ -1,44 +1,48 @@
+@import './fonts.css';
+
 body {
   background-color: rgb(26, 181, 181);
 }
 
-.cv-container {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-header {
-  text-align: center;
+.nav{
+  width: 1000px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   margin-bottom: 20px;
-}
-
-h1 {
-  margin: 0;
-}
-
-p {
-  margin: 5px 0;
-}
-
-.cv-section {
-  margin-bottom: 30px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  margin-top: 30px;
 }
 
-ul li::before {
-  content: "• ";
+li{
+  display: flex;
+  background-color: #264a51;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
 }
 
-main {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+a {
+  text-decoration: none; /* Ta bort standard understrykning */
+  color: #8a8a8a; /* Ange en önskad färg för länkarna */
+}
+
+/* Ändra stilen för länken när musen hovrar över den */
+a:hover {
+  border-bottom: 2px solid #00d5ff; /* Ändra tjockleken på understrykningen vid hovring */
+  transition: border-bottom 0.2s ease-in-out; /* Lägg till övergångseffekt */
+  color: #00d5ff;
 }

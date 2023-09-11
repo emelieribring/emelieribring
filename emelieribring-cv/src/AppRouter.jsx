@@ -11,13 +11,8 @@ import './App.css';
 function AppRouter() {
   return (
     <Router>
-      <div className="cv-container">
-        <header>
-          <h1>John Doe</h1>
-          <p>Web Developer</p>
-        </header>
-        <nav>
-          <ul>
+        <nav className='nav'>
+          <ul id='navLinks'>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/skills">Skills</Link></li>
@@ -34,7 +29,6 @@ function AppRouter() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-      </div>
     </Router>
   );
 }

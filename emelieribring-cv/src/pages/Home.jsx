@@ -1,10 +1,12 @@
 import React from 'react';
+import './css/Home.css';
 
 function Home() {
   return (
-    <div>
-      <h2>Welcome to My CV Website</h2>
-      <p>Explore my skills, experience, and more.</p>
+    <div className='mainDiv'>
+      <div>
+        <h1 id='cybertext'>CYBERTEXT</h1>
+      </div>
     </div>
   );
 }
