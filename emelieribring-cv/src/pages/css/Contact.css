@@ -1,0 +1,45 @@
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    top: 50%;
+    z-index: -1;
+  }
+  
+  
+  .linkedIN{
+    width: 200px;
+    height: 200px;
+    background-image: url(../photos/linkedInIcon.png);
+    position: relative;
+    align-self: center;
+    left: 20%;
+  }
+  
+  .Instagram{
+    width: 200px;
+    height: 200px;
+    background-image: url(../photos/icons8-instagram-200[1].png);
+    position: relative;
+    align-self: center;
+    left: 20%;
+  }
+  
+  .Github{
+    width: 200px;
+    height: 200px;
+    background-image: url(../photos/icons8-github-192[1].png);
+    position: relative;
+    align-self: center;
+    left: 20%;
+  }
+  
+  .Email{
+    width: 200px;
+    height: 200px;
+    background-image: url(../photos/icons8-contact-200[1].png);
+    position: relative;
+    align-self: center;
+    left: 20%;
+  }

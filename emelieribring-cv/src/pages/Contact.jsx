@@ -1,12 +1,14 @@
 import React from 'react';
+import './css/Contact.css'
 
 function Contact() {
     return (
-      <div>
-        <h2>Contact</h2>
-        <p>Email: john@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-      </div>
+      <div className='mainDiv'>
+      <div className='linkedIN'></div>
+      <div className='Github'></div>
+      <div className='Email'></div>
+      <div className='Instagram'></div>
+    </div>
     );
 }
 

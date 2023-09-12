@@ -1,48 +1,44 @@
 @import './fonts.css';
 
 body {
-  background-color: rgb(26, 181, 181);
+  width: 100vw;
+  height: 100vh;
+  background-color: #fad99c;
+  display: flex;
 }
 
 .nav{
-  width: 1000px;
-  height: 40px;
+  align-self: flex-start;
+  background-color: #fad99c;
+  width: 100vw;
+  height: 50px;
   display: flex;
-  justify-content: space-around;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin-bottom: 20px;
+  flex-direction: row;
+  position: fixed;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+#navLinks{
   display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: center;
-  width: 900px;
-  margin-top: 30px;
+  width: 100vw;
+  justify-content: space-evenly;
 }
 
 li{
-  display: flex;
-  background-color: #264a51;
-  justify-content: space-evenly;
-  border-radius: 10px;
+  text-decoration: none;
+  position: relative;
   width: 100px;
-  height: 30px;
-  font-weight: bold;
+  font-size: 15px;
+  color: blanchedalmond;
 }
+
+li:hover{
+  font-size: 20px;
+}
+
 
 a {
-  text-decoration: none; /* Ta bort standard understrykning */
-  color: #8a8a8a; /* Ange en önskad färg för länkarna */
+  text-decoration: none; 
+  color: #8a8a8a; 
 }
 
-/* Ändra stilen för länken när musen hovrar över den */
-a:hover {
-  border-bottom: 2px solid #00d5ff; /* Ändra tjockleken på understrykningen vid hovring */
-  transition: border-bottom 0.2s ease-in-out; /* Lägg till övergångseffekt */
-  color: #00d5ff;
-}
+
