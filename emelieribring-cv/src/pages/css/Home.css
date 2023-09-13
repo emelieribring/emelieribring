@@ -6,3 +6,118 @@
   top: 50%;
   z-index: -1;
 }
+
+.pictureMe{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  left: 20%;
+}
+
+.picture{
+  width: 500px;
+  height: 500px;
+  align-self: center;
+  background-image: url(../photos/womenblackwhite3-removebg-preview.png);
+  background-size: contain;
+  position: relative;
+  top: 88px;
+}
+
+.startAboutMe{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f1e8;
+  display: flex;
+}
+
+.line{
+  width: 780px;
+  height: 245px;
+  border-bottom: solid #000 3px;
+  border-left: solid #000 3px;
+  position: relative;
+  top: 55%;
+  left: 100px;
+}
+
+.aboutMeText{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  position: relative;
+  left: 180px;
+  font-family: LEMON MILK;
+}
+
+.emelie{
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  font-size: 40px;
+  font-family: LEMON MILK;
+ }
+
+.ribring{
+  position: absolute;
+  left: 69%;
+  top: 100.8%;
+  font-size: 40px;
+  transform: rotate(90deg);
+  font-family: LEMON MILK;
+}
+
+.secondDiv{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f1e8;
+  position: relative;
+  z-index: -2;
+}
+
+.secondLine{
+  width: 700px;
+  height: 700px;
+  border-right: solid #000 3px;
+  border-bottom: solid #000 3px;
+  position: relative;
+  left: 23%;
+  top: -35px;
+}
+
+.borderAboutMe{
+  width: 800px;
+  height: 300px;
+  border: solid 3px rgb(0, 0, 0, 0.6);
+  position: relative;
+  top: 60px;
+  left: -40px;
+}
+
+.textAboutMe{
+  width: 500px;
+  height: 300px;
+  font-family: 'Times New Roman';
+  text-align: justify;
+  padding: 50px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column; /* Ändra layout till kolumn */
+    align-items: center; /* Centrera innehåll vertikalt */
+  }
+
+  .pictureMe {
+    width: 100%; /* Anpassa bredd till skärmens bredd */
+    left: 0; /* Återställ positionen */
+  }
+
+  .picture {
+    background-image: none;
+  }
+  
+}

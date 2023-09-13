@@ -3,13 +3,13 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #fad99c;
+  background-color: #f6f1e8;
   display: flex;
 }
 
 .nav{
   align-self: flex-start;
-  background-color: #fad99c;
+  background-color: rgb(246, 241, 232, 0.5);
   width: 100vw;
   height: 50px;
   display: flex;
