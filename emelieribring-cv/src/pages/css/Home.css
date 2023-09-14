@@ -3,11 +3,172 @@
   height: 100vh;
   display: flex;
   position: relative;
-  top: 50%;
-  z-index: -1;
+  background-color: transparent;
 }
 
-.pictureMe{
+.picture{
+  width: 500px;
+  height: 500px;
+  align-self: center;
+  background-image: url(../photos/womenblackwhite3-removebg-preview.png);
+  background-size: contain;
+  position: absolute;
+  top: 6vh;
+  left: 15vw;
+}
+
+.line{
+  width: 70vw;
+  height: 40vh;
+  border-bottom: solid #000 3px;
+  border-left: solid #000 3px;
+  position: relative;
+  align-self: center;
+  left: 100px;
+  top: 100px;
+}
+
+.aboutMeFont{
+  font-size: 20px;
+  width: 50px;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  position: relative;
+  left: -3px;
+  top: -70px;
+  font-family: LEMON MILK;
+}
+
+.emelie{
+  position: relative;
+  left: 59.04vw;
+  top: 15vh;
+  font-size: 40px;
+  font-family: LEMON MILK;
+  width: 100px;
+
+ }
+
+.ribring{
+  position: relative;
+  left: 33vw;
+  top: 81.7vh;
+  font-size: 40px;
+  transform: rotate(90deg);
+  font-family: LEMON MILK;
+  z-index: 1;
+}
+
+.secondDiv{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f1e8;
+  position: relative;
+  background-color:transparent;
+}
+
+.secondLine{
+  width: 70vw;
+  height: 90vh;
+  border-right: solid #000 3px;
+  border-bottom: solid #000 3px;
+  position: relative;
+  left: 100px;
+  top: -100px;
+}
+
+.borderAboutMe{
+  width: 80vw;
+  height: 50vh;
+  border: solid 3px rgb(0, 0, 0, 0.6);
+  position: relative;
+  top: 70px;
+  background-color: rgba(213, 201, 179, 0.5);
+  z-index: -2;
+}
+
+.textAboutMe{
+  width: 50vw;
+  height: 20vh;
+  font-family: 'Times New Roman';
+  text-align: justify;
+  padding: 50px;
+}
+
+.borderMoreAbout{
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+  border-bottom: solid 3px rgb(0, 0, 0);
+  border-left: solid 3px rgb(0, 0, 0);
+  top: 37vh;
+}
+
+.moreAboutText{
+  width: 50vw;
+  height: 20vh;
+  font-family: 'Times New Roman';
+  text-align: justify;
+  padding: 50px;
+}
+
+.dogPicture{
+  width: 300px;
+  height: 300px;
+  align-self: center;
+  background-image: url(../photos/dogblackandwhite-removebg-preview.png);
+  background-size: contain;
+  position: absolute;
+  transform:scaleX(-1);
+  top: 126.5vh;
+  left: 54.5vw;
+}
+
+
+@media screen and (max-width: 768px) {
+  .picture{
+    left: -10vw;
+  }
+
+  .aboutMeFont{
+    color: beige;
+  }
+
+  
+  .line{
+    left: 50px;
+  }
+
+  .secondLine{
+    left: 50px;
+  }
+
+  .emelie{
+    left: 38.8vw;
+  }
+
+  .ribring{
+    top: 35vh;
+    left: 30vw;
+  }
+  
+  .textAboutMe{
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .dogPicture{
+    width: 200px;
+    height: 200px;
+    top: 142.5vh;
+    left: 37vw;
+  }
+
+}
+
+
+
+/*.pictureMe{
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -22,69 +183,9 @@
   background-image: url(../photos/womenblackwhite3-removebg-preview.png);
   background-size: contain;
   position: relative;
-  top: 88px;
+  top: 25.5px;
 }
 
-.startAboutMe{
-  width: 100vw;
-  height: 100vh;
-  background-color: #f6f1e8;
-  display: flex;
-}
-
-.line{
-  width: 780px;
-  height: 245px;
-  border-bottom: solid #000 3px;
-  border-left: solid #000 3px;
-  position: relative;
-  top: 55%;
-  left: 100px;
-}
-
-.aboutMeText{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  align-self: center;
-  position: relative;
-  left: 180px;
-  font-family: LEMON MILK;
-}
-
-.emelie{
-  position: absolute;
-  left: 65%;
-  top: 80%;
-  font-size: 40px;
-  font-family: LEMON MILK;
- }
-
-.ribring{
-  position: absolute;
-  left: 69%;
-  top: 100.8%;
-  font-size: 40px;
-  transform: rotate(90deg);
-  font-family: LEMON MILK;
-}
-
-.secondDiv{
-  width: 100vw;
-  height: 100vh;
-  background-color: #f6f1e8;
-  position: relative;
-  z-index: -2;
-}
-
-.secondLine{
-  width: 700px;
-  height: 700px;
-  border-right: solid #000 3px;
-  border-bottom: solid #000 3px;
-  position: relative;
-  left: 23%;
-  top: -35px;
-}
 
 .borderAboutMe{
   width: 800px;
@@ -107,17 +208,80 @@
 
 @media screen and (max-width: 768px) {
   .mainDiv {
-    flex-direction: column; /* Ändra layout till kolumn */
-    align-items: center; /* Centrera innehåll vertikalt */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .pictureMe {
-    width: 100%; /* Anpassa bredd till skärmens bredd */
-    left: 0; /* Återställ positionen */
+    width: 100%; 
+    left: 0; 
   }
 
   .picture {
     background-image: none;
   }
+
+  .aboutMeText{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    position: relative;
+    left: 80px;
+    font-family: LEMON MILK;
+  }
+
+  .line{
+    width: 290px;
+    height: 245px;
+    border-bottom: solid #000 3px;
+    border-left: solid #000 3px;
+    position: relative;
+    top: 62%;
+    left: -50px;
+  }
+
+  .emelie{
+    position: absolute;
+    left: 40%;
+    top: 88%;
+    font-size: 40px;
+    font-family: LEMON MILK;
+   }
+
+   .ribring{
+  position: absolute;
+  left: 69%;
+  top: 115%;
+  font-size: 40px;
+  transform: rotate(90deg);
+  font-family: LEMON MILK;
+  }
+
+  .secondLine{
+    width: 290px;
+    height: 700px;
+    border-right: solid #000 3px;
+    border-bottom: solid #000 3px;
+    position: relative;
+    left: 50px;
+    top: 0px;
+  }
+
+  .borderAboutMe{
+    width: 300px;
+    height: 300px;
+    border: solid 3px rgb(0, 0, 0, 0.6);
+    position: relative;
+    top: 60px;
+    left: 20px;
+  }
   
-}
+  .textAboutMe{
+    width: 250px;
+    height: 250px;
+    font-family: 'Times New Roman';
+    text-align: justify;
+    padding: 10px;
+  }
+
+}*/

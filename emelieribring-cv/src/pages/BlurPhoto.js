@@ -18,11 +18,13 @@ function ImageBlur() {
   }, []);
 
   const blurValue = Math.min(10, scrollPosition / 100); 
+  const blurValueDog = Math.min(10, scrollPosition / 800); 
+
 
   return (
     <div>
-      <div className='picture' style={{ filter: `blur(${blurValue}px)` }}
-      />
+      <div className='picture' style={{ filter: `blur(${blurValue}px)` }}/>
+      <div className='dogPicture' style={{ filter: `blur(${blurValueDog}px)` }}></div>
     </div>
   );
 }
