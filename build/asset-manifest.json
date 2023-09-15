@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93f8b640.css",
+    "main.js": "/static/js/main.08419eaf.js",
+    "static/js/787.26bbdfe2.chunk.js": "/static/js/787.26bbdfe2.chunk.js",
+    "static/media/strandvideo.mp4": "/static/media/strandvideo.bfe91adf6fcb8a82a533.mp4",
+    "static/media/MicrosoftTeams-image.png": "/static/media/MicrosoftTeams-image.05113928fd8d9a533e47.png",
+    "static/media/Screenshot 2023-09-15 at 18-50-35 To the moon.png": "/static/media/Screenshot 2023-09-15 at 18-50-35 To the moon.536ecf0050cbfa32cc8a.png",
+    "static/media/dogblackandwhite-removebg-preview.png": "/static/media/dogblackandwhite-removebg-preview.239fc2b2db1c473e30b4.png",
+    "static/media/Screenshot 2023-09-15 at 18-39-43 NFT Rescue.png": "/static/media/Screenshot 2023-09-15 at 18-39-43 NFT Rescue.a7bb2dbc9d282fd159b7.png",
+    "static/media/cybero.ttf": "/static/media/cybero.614132ec176580889c94.ttf",
+    "static/media/icons8-github-192[1].png": "/static/media/icons8-github-192[1].b533de513a69f4f94439.png",
+    "static/media/linkedInIcon.png": "/static/media/linkedInIcon.850a55edd8c0ad25579c.png",
+    "static/media/icons8-instagram-200[1].png": "/static/media/icons8-instagram-200[1].5748b505523bfa3c2b8b.png",
+    "index.html": "/index.html",
+    "main.93f8b640.css.map": "/static/css/main.93f8b640.css.map",
+    "main.08419eaf.js.map": "/static/js/main.08419eaf.js.map",
+    "787.26bbdfe2.chunk.js.map": "/static/js/787.26bbdfe2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93f8b640.css",
+    "static/js/main.08419eaf.js"
+  ]
+}
