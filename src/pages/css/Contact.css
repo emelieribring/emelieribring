@@ -1,20 +1,15 @@
 .mainDiv{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    top: 50%;
-    z-index: -3;
-  }
-  
-  
-  .linkedIN{
+  position: relative;
+}
+
+.linkedIN{
     width: 200px;
     height: 200px;
     background-image: url(../photos/linkedInIcon.png);
     position: relative;
     align-self: center;
     left: 20%;
+    background-size: cover;
   }
   
   .Instagram{
@@ -24,6 +19,7 @@
     position: relative;
     align-self: center;
     left: 20%;
+    background-size: cover;
   }
   
   .Github{
@@ -33,6 +29,7 @@
     position: relative;
     align-self: center;
     left: 20%;
+    background-size: cover;
   }
   
   .Email{
@@ -42,4 +39,10 @@
     position: relative;
     align-self: center;
     left: 20%;
+    background-size: cover;
+  }
+
+  .linkedIN:hover, .Email:hover, .Github:hover, .Instagram:hover{
+    width: 250px;
+    height: 250px;
   }

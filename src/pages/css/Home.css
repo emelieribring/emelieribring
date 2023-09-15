@@ -61,7 +61,7 @@
 
 .secondDiv{
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-color: #f6f1e8;
   position: relative;
   background-color:transparent;
@@ -87,10 +87,10 @@
   z-index: -2;
 }
 
-.textAboutMe{
+#textAboutMe{
   width: 50vw;
   height: 20vh;
-  font-family: 'Times New Roman';
+  font-family: 'roboto';
   text-align: justify;
   padding: 50px;
 }
@@ -104,7 +104,7 @@
   top: 37vh;
 }
 
-.moreAboutText{
+#moreAboutText{
   width: 50vw;
   height: 20vh;
   font-family: 'Times New Roman';
@@ -122,6 +122,25 @@
   transform:scaleX(-1);
   top: 126.5vh;
   left: 54.5vw;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
 }
 
 

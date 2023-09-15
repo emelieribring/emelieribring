@@ -26,16 +26,16 @@ function Contact() {
   return (
     <div className='mainDiv'>
       <div className='linkedIN' onClick={openLinkedIn}>
-        LinkedIn
+        
       </div>
       <div className='Github' onClick={openGitHub}>
-        GitHub
+        
       </div>
       <div className='Email' onClick={sendEmail}>
-        Email
+        
       </div>
       <div className='Instagram' onClick={openInstagram}>
-        Instagram
+        
       </div>
     </div>
   );
