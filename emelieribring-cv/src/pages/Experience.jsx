@@ -1,9 +1,8 @@
 import React from 'react';
-import ImageBlur from './BlurPhoto.js';
 
 function Experience() {
   return (
-    <ImageBlur></ImageBlur>
+    <h1>blalbalba</h1>
     );
   }
 

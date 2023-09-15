@@ -1,15 +1,44 @@
 import React from 'react';
 import './css/Contact.css'
 
+
 function Contact() {
-    return (
-      <div className='mainDiv'>
-      <div className='linkedIN'></div>
-      <div className='Github'></div>
-      <div className='Email'></div>
-      <div className='Instagram'></div>
+  // Funktion som öppnar LinkedIn i en ny flik när länken klickas på
+  const openLinkedIn = () => {
+    window.open('https://www.linkedin.com', '_blank');
+  };
+
+  // Funktion som öppnar GitHub i en ny flik när länken klickas på
+  const openGitHub = () => {
+    window.open('https://www.github.com', '_blank');
+  };
+
+  // Funktion som öppnar e-postprogrammet när länken klickas på
+  const sendEmail = () => {
+    window.location.href = 'mailto:example@email.com';
+  };
+
+  // Funktion som öppnar Instagram i en ny flik när länken klickas på
+  const openInstagram = () => {
+    window.open('https://www.instagram.com', '_blank');
+  };
+
+  return (
+    <div className='mainDiv'>
+      <div className='linkedIN' onClick={openLinkedIn}>
+        LinkedIn
+      </div>
+      <div className='Github' onClick={openGitHub}>
+        GitHub
+      </div>
+      <div className='Email' onClick={sendEmail}>
+        Email
+      </div>
+      <div className='Instagram' onClick={openInstagram}>
+        Instagram
+      </div>
     </div>
-    );
+  );
 }
 
 export default Contact;
