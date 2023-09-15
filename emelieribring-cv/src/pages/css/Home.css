@@ -7,25 +7,21 @@
 }
 
 .picture{
-  width: 500px;
-  height: 500px;
-  align-self: center;
-  background-image: url(../photos/womenblackwhite3-removebg-preview.png);
-  background-size: contain;
   position: absolute;
-  top: 6vh;
-  left: 15vw;
+  font-size: 15vw;
+  top: -6vh;
+  left: 8vw;
+  opacity: 0.5;
 }
 
 .line{
   width: 70vw;
-  height: 40vh;
+  height: 60vh;
   border-bottom: solid #000 3px;
   border-left: solid #000 3px;
   position: relative;
-  align-self: center;
   left: 100px;
-  top: 100px;
+  top: 25vh;
 }
 
 .aboutMeFont{

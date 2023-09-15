@@ -23,7 +23,7 @@ function ImageBlur() {
 
   return (
     <div>
-      <div className='picture' style={{ filter: `blur(${blurValue}px)` }}/>
+      <h1 className='picture' style={{ filter: `blur(${blurValue}px)` }}>WEB DEVELOPER</h1>
       <div className='dogPicture' style={{ filter: `blur(${blurValueDog}px)` }}></div>
     </div>
   );
