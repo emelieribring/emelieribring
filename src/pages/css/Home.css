@@ -9,7 +9,7 @@
 .picture{
   position: absolute;
   font-size: 15vw;
-  top: -6vh;
+  top: -2vh;
   left: 8vw;
   opacity: 0.5;
 }
@@ -38,7 +38,7 @@
 .emelie{
   position: relative;
   left: 59.04vw;
-  top: 15vh;
+  top: 36vh;
   font-size: 40px;
   font-family: LEMON MILK;
   width: 100px;
@@ -48,7 +48,7 @@
 .ribring{
   position: relative;
   left: 33vw;
-  top: 81.7vh;
+  top: 102.5vh;
   font-size: 40px;
   transform: rotate(90deg);
   font-family: LEMON MILK;
@@ -108,20 +108,8 @@
   padding: 50px;
 }
 
-.dogPicture{
-  width: 300px;
-  height: 300px;
-  align-self: center;
-  background-image: url(../photos/dogblackandwhite-removebg-preview.png);
-  background-size: contain;
-  position: absolute;
-  transform:scaleX(-1);
-  top: 126.5vh;
-  left: 54.5vw;
-}
-
 .hidden{
-  opacity: 0;
+  opacity: 1;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
@@ -133,6 +121,45 @@
   transform: translateX(0);
 }
 
+.pictures{
+  width: 50vw;
+  height: 17vh;
+  position: absolute;
+  top: 151vh;
+  left: 20vw;
+  display: flex;
+  gap: 100px;
+  z-index: 3;
+}
+
+#pic1, #pic2, #pic3{
+  width: 150px;
+  height: 218px;
+  background-color: black;
+  align-self: center;
+  position: relative;
+  border: solid #000 1px;
+  border-radius: 20px;
+} 
+
+#pic1{
+  transition: 3s;
+  background-image: url(../photos/autumnPicOne.png);
+  background-size: contain;
+}
+
+#pic2{
+  transition: 2s;
+  background-image: url(../photos/autumnPicTwo.png);
+  background-size: contain;
+}
+
+#pic3{
+  transition: 1s;
+  background-image: url(../photos/autumnPicThree.png);
+  background-size: contain;
+}
+
 @media(prefers-reduced-motion) {
   .hidden{
     transition: none;
@@ -142,7 +169,8 @@
 
 @media screen and (max-width: 768px) {
   .picture{
-    left: -10vw;
+    top: 50vh;
+    left: 12vw;
   }
 
   .aboutMeFont{
@@ -159,12 +187,14 @@
   }
 
   .emelie{
-    left: 38.8vw;
+    left: 0vw;
+    top: 0vh;
   }
 
   .ribring{
-    top: 35vh;
-    left: 30vw;
+    transform: rotate(0deg);
+    left: 0vw;
+    top: -7vh;
   }
   
   .textAboutMe{
@@ -172,13 +202,9 @@
     font-size: 15px;
   }
 
-  .dogPicture{
-    width: 200px;
-    height: 200px;
-    top: 142.5vh;
-    left: 37vw;
+  #pic1, #pic2, #pic3{
+    visibility: hidden;
   }
-
 }
 
 
